@@ -1,5 +1,8 @@
 package com.imooc.design.pattern.creation.factorymethod;
 
+/**
+ * 工厂方法关注产品等级结构
+ */
 public abstract class VideoFactory {
 
     public abstract Video getVideo();
