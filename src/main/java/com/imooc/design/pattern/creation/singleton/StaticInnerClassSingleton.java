@@ -2,6 +2,9 @@ package com.imooc.design.pattern.creation.singleton;
 
 public class StaticInnerClassSingleton {
     private StaticInnerClassSingleton() {
+        if(InnerClass.instance != null) {
+            throw new RuntimeException("单例私有构造器禁止调用反射");
+        }
     }
 
     // Class对象的初始化锁
